@@ -295,3 +295,8 @@ END GALLERY*/
 }
 
 /*END SLIDESHOW*/
+
+.youtube-video {
+  aspect-ratio: 16 / 9;
+  width: 30%;
+}
