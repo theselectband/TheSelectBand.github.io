@@ -32,22 +32,130 @@
   </div>
     <h3>Pictures!</h3>
     
-    <table class="center" style="max-width:100%;height:auto;">
-  <tr>
-    <td><img src="/pics/banner2.jpg" title="Our super cool D.I.Y. banner" width="600" class="center" style="max-width:100%;height:auto;"></td>
-    <td><img src="/pics/band5.jpg" title="They know something you don't" width="600" class="center" style="max-width:100%;height:auto;"></td>
-    <td><img src="/pics/band6.jpg" title="Basement gigs" width="600" class="center" style="max-width:100%;height:auto;"></td>
-  </tr>
-  <tr>
-    <td><img src="/pics/band1.jpg" title="Those bricks aren't even real" width="600" class="center" style="max-width:100%;height:auto;"></td>
-    <td><img src="/pics/band4.jpg" title="Korn isn't very punk rock..." width="600" class="center" style="max-width:100%;height:auto;"></td>
-    <td><img src="/pics/juhcoop.jpg" title="Singing punk rock songs to kids" width="600" class="center" style="max-width:100%;height:auto;"></td>
-  </tr>
-  <tr>
-    <td><img src="/pics/band3.jpg" title="Revin is often seen without a shirt during practices" width="600" class="center" style="max-width:100%;height:auto;"></td>
-    <td><img src="/pics/atdabell.jpg" title="Taco Bell is a band favorite" width="600" class="center" style="max-width:100%;height:auto;"></td>
-    <td><img src="/pics/banner1.jpg" title="Stenciling our logo" width="600" class="center" style="max-width:100%;height:auto;"></td>
-  </tr>
-</table>
+    <div class="slideshow-container">
+        
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span> 
+  <span class="dot" onclick="currentSlide(8)"></span> 
+  <span class="dot" onclick="currentSlide(9)"></span> 
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 9</div>
+  <img src="/pics/banner2.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 9</div>
+  <img src="/pics/band5.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 9</div>
+  <img src="/pics/band6.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 9</div>
+  <img src="/pics/band1.jpg" style="width:100%">
+  <div class="text">Caption</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">5 / 9</div>
+  <img src="/pics/band4.jpg" style="width:100%">
+  <div class="text">Caption</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6 / 9</div>
+  <img src="/pics/juhcoop.jpg" style="width:100%">
+  <div class="text">Caption</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">7 / 9</div>
+  <img src="/pics/band3.jpg" style="width:100%">
+  <div class="text">Caption</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">8 / 9</div>
+  <img src="/pics/atdabell.jpg" style="width:100%">
+  <div class="text">Caption</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">9 / 9</div>
+  <img src="/pics/banner1.jpg" style="width:100%">
+  <div class="text">Caption</div>
+</div>
+
+</div>
+
+<p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</p>
+<footer>
+<p>&copy; 2023 The Select Inc.</p>
+</footer>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" activeslide", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " activeslide";
+}
+</script>
+
+	
   </body>
 </html>
