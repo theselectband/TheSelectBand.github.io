@@ -150,7 +150,7 @@ li a:hover {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-/*START GALLERY*/
+/*START GALLERY
 div.gallery {
   border: 1px solid #ccc;
 }
@@ -197,7 +197,7 @@ div.desc {
   display: table;
   clear: both;
 }
-/*END GALLERY*/
+END GALLERY*/
 /*START SLIDESHOW*/
 
 * {box-sizing:border-box}
