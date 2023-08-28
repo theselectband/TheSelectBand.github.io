@@ -218,9 +218,10 @@ END GALLERY*/
 .prev, .next {
   cursor: url("/theselectcursor2.png"), url("/theselectcursor2.ico"), url("/theselectcursor2.gif"), auto
   position: static;
-  top: 100%;
+  top: 100;
   width: auto;
-  margin-top: -22px;
+  /*margin-top: -22px;*/
+  margin: 5px;
   padding: 5px;
   color: #00aa00;
   font-weight: bold;
@@ -271,7 +272,7 @@ END GALLERY*/
 .dot {
   height: 15px;
   width: 15px;
-  margin: -5px 1px;
+  margin: 2px;
   background-color: #00aa00;
   border-radius: 50%;
   display: inline-block;
