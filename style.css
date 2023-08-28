@@ -217,11 +217,11 @@ END GALLERY*/
 /* Next & previous buttons */
 .prev, .next {
   cursor: url("/theselectcursor2.png"), url("/theselectcursor2.ico"), url("/theselectcursor2.gif"), auto
-  position: absolute;
+  position: static;
   top: 100%;
   width: auto;
   margin-top: -22px;
-  padding: 8px;
+  padding: 5px;
   color: #00aa00;
   font-weight: bold;
   font-size: 35px;
@@ -264,14 +264,14 @@ END GALLERY*/
   font-size: 20px;
   padding: 8px 12px;
   position: absolute;
-  top: 60px;
+  top: 110px;
 }
 
 /* The dots/bullets/indicators */
 .dot {
   height: 15px;
   width: 15px;
-  margin: 0 2px;
+  margin: -5px 1px;
   background-color: #00aa00;
   border-radius: 50%;
   display: inline-block;
