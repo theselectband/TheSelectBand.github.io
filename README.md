@@ -1,2 +1,2 @@
 # TheSelectBand.github.io
-https://theselectband.github.io/
+https://www.theselectband.com/
