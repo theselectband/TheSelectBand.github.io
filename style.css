@@ -219,6 +219,7 @@ END GALLERY*/
   max-width: 1000px;
   position: relative;
   margin: auto;
+    margin-top: 15px;
 }
 
 /* Hide the images by default */
@@ -233,7 +234,7 @@ END GALLERY*/
   top: 100;
   width: auto;
   /*margin-top: -22px;*/
-  margin: 5px;
+  margin: -3px;
   padding: 5px;
   color: #00aa00;
   font-weight: bold;
@@ -285,6 +286,7 @@ END GALLERY*/
   height: 15px;
   width: 15px;
   margin: 2px;
+    margin-bottom: 5px;
   background-color: #00aa00;
   border-radius: 50%;
   display: inline-block;
