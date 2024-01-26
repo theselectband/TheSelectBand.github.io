@@ -17,6 +17,13 @@ iframe {
     cursor: url("/theselectcursor2.png"), url("/theselectcursor2.ico"), url("/theselectcursor2.gif"), auto
 }
 
+p {
+   margin-left:150px;
+   margin-right:150px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
 h1 {
   margin-bottom: 0.10em;
   margin-top: 0.20em;
