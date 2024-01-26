@@ -18,8 +18,8 @@ iframe {
 }
 
 p {
-   margin-left:150px;
-   margin-right:150px;
+   margin-left:100px;
+   margin-right:100px;
     margin-top: 15px;
     margin-bottom: 15px;
   }
@@ -326,4 +326,9 @@ END GALLERY*/
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
 }
