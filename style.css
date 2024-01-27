@@ -18,8 +18,8 @@ iframe {
 }
 
 p {
-   margin-left:100px;
-   margin-right:100px;
+  padding-left: calc(8px + 1.5625vw);
+    padding-left: calc(8px + 1.5625vw);
     margin-top: 15px;
     margin-bottom: 15px;
   }
