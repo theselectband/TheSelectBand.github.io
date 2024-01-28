@@ -99,7 +99,7 @@ li a {
   display: block;
   color: black;
   text-align: center;
-  padding: 6px .26vw;
+  padding: .4vw .26vw;
   border: .3vw solid black;
   border-bottom: 1px rgba(1,1,1,0);
   border-top: 1px rgba(1,1,1,0);
@@ -124,7 +124,7 @@ li a:hover {
   border-top: 1px rgba(1,1,1,0);
   outline: none;
   color: black;
-  padding: 6px .58vw;
+  padding: .4vw .58vw;
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
@@ -153,7 +153,7 @@ li a:hover {
 .dropdown-content a {
   float: none;
   color: black;
-  padding: 5px .26vw;
+  padding: .4vw .26vw;
   text-decoration: none;
   display: block;
   text-align: center;
