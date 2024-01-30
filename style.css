@@ -9,9 +9,8 @@ footer {
     cursor: url("/theselectcursor.png"), url("/theselectcursor.ico"), url("/theselectcursor.gif"), auto
 }
 
-a:link, a:visited {
+a {
     cursor: url("/theselectcursor2.png"), url("/theselectcursor2.ico"), url("/theselectcursor2.gif"), auto
-    color: #00aa00;
 }
 
 iframe {
