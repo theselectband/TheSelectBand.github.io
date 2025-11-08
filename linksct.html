@@ -106,23 +106,53 @@
         .link-tree > li:nth-child(9) a {
         background: #00aa00;
       }
-    
-
       /*.link-tree > li a:hover,
       .link-tree > li a:focus {
         color: white;
         background: darkblue;
       }*/
+      
+      .collapsible {
+  background-color: #8800e5;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 70%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 4vw;
+}
+
+.active, .collapsible:hover {
+  background-color: #6100a3;
+}
+
+.content {
+  margin-left: auto; 
+  margin-right: auto;
+  width: 70%;
+  border: none;
+  text-align: center;
+  display: none;
+  overflow: hidden;
+  background-color: #333;
+}
+      
     </style>
   </head>
 
   <body>
-    <img src="/logobeeg.png" width="1000" class="center" style="max-width:100%;height:auto;">
+    <img src="/ctlogo.png" width="900" class="center" style="max-width:100%;height:auto;">
 
-    <p>Punk rock band from Tigard, Oregon</p>
+    <p>PDX punk musician and music producer.<br>
+      Here's a list of all the projects I'm in:</p>
 
-    <ul class="link-tree">
-      <li>
+    <button type="button" class="collapsible">The Select</button>
+<div class="center content">
+  <p>My main band. I sing and play guitar.
+  <ul class="link-tree">
+  <li>
         <a class=purple href="javascript:location='mailto:\u0074\u0068\u0065\u0073\u0065\u006c\u0065\u0063\u0074\u0070\u006f\u0072\u0074\u006c\u0061\u006e\u0064\u0040\u0067\u006d\u0061\u0069\u006c\u002e\u0063\u006f\u006d';void 0">
           Email
         </a>
@@ -163,12 +193,30 @@
           Youtube
         </a>
       </li>
-    </ul>
+  </ul>
+</div>
+    
       
           <footer>
     <h5>&copy; 2025 The Select Inc.</h5>
     </footer>
 
+    <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
       
-  </body>
+</body>
 </html>
