@@ -19,9 +19,13 @@ iframe {
 }
 
 p {
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    margin-left: 14vw;
+    margin-right: 14vw;
   }
+
+
 
 h1 {
   margin-bottom: 0.10em;
@@ -323,6 +327,8 @@ END GALLERY*/
 
 .grid-container {
     display: grid;
+    margin-left: 10vw;
+    margin-right: 10vw;
     grid-template-columns: repeat(2, 1fr);
 }
 
